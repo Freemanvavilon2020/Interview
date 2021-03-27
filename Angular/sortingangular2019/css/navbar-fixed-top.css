@@ -1,0 +1,9 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+.media-object {
+  width: 200px;
+  height: 200px;
+}
+
