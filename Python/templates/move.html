@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{%block title%}
+    О нас
+{%endblock%}
+{%block content%}
+     <section class="mt-5 wow fadeIn">
+        <div  class="col-md-6 mb-4">
+            <form class="text-center border border-light p-5" action="/add_message" method="post" >
+                <div  class="col-md-6 mb-4">
+
+                    <ul class="list-group">
+                      {%for tests in test %}
+                        <li class="list-group-item">{{tests}}</li>
+
+                        {%endfor%}
+                    </ul>
+                </div>
+                <h5>Данные о фильмах за ... дату</h5>
+                <input type="date" name="datefilm" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Введите дату:">
+
+                <!-- Sign in button -->
+                <button class="btn btn-info btn-block my-4" type="submit">Отправить</button>
+            </form>
+        </div>
+      </section>
+      <section class="mt-5 wow fadeIn">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <ul class="list-group">
+               {%for movie in about_movie %}
+                <li class="list-group-item">{{movie}}</li>
+
+                {%endfor%}
+            </ul>
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+      {%endblock%}
+
