@@ -23,5 +23,8 @@ echo sequenceSum('1.1, 2.1, 3.9');
 
 #3Write a function vowelsNumber(s) that accepts string s as a parameter and counts up the number of vowels contained in the string. Valid vowels are: 'a', 'e', 'i', 'o', and 'u'.
 #4Write a function  contains(str1, str2) that accepts two strings str1 and str2 as arguments and returns a boolean True if either string occurs anywhere in the other, and False otherwise. Function should be case insensitive.
+function contains($str1, $str2){
+            return stripos($str1,$str2) !== false || stripos($str2, $str1) !== false ? true : false;
+        }
 #5Write a function isPalindrome(s) that accepts string s as an argument and returns a boolean True if string reads the same way backwards and forwards. The function should be case and spaces insensitive.
 #6Write a function findExtremeDivisors(n1, n2). n1 and n2 should be positive ints. The function should return a string “Error: n1 and n2 should be positive ints!” if either n1 or n2 <= 0.The function returns an array of two elements containing the smallest common divisor > 1 and the largest common divisor of n1 and n2.If the are no common divisors, the function should return a string "There are no common divisors".
