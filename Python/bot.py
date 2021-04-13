@@ -4,7 +4,7 @@ from components import movies
 from components import bank
 from time import sleep
 
-
+#Бот 
 
 token = tokendb.token
 URL = 'https://api.telegram.org/bot' + token + '/'
