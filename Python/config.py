@@ -1,6 +1,6 @@
 from flaskext.mysql import MySQL
 from app import app
-
+#Конфиги 
 mysql = MySQL()
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = ''
