@@ -11,7 +11,7 @@ import components
 app = Flask (__name__)
 app.debug = True
 
-
+# Выводим главную страницу
 @app.route('/')
 def index():
     return render_template('base.html')
