@@ -1,5 +1,5 @@
 import requests
-
+#Получаем курсы валют
 moneyurl = 'https://www.nbrb.by/API/ExRates/Rates/Dynamics/145?startDate=2018-9-1&endDate=2018-12-30'
 def get_parsed_page( moneyurl ):
     response = requests.get (moneyurl).json()
